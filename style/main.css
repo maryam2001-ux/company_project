@@ -1,0 +1,98 @@
+/* *THIS is main css file for organizing css file */
+
+:root {
+  --bg-color: #ffffff;
+  --main-color:#6A42C2;
+  --secondary-color:#FBFBFB;
+  --text-color:#272020;
+}
+
+::selection {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*
+::after ,
+::before {
+box-sizing: border-box;
+}
+
+span , a {
+  display: inline-block
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+
+/* dont forget to change font name */
+
+html {
+  scroll-behavior:smooth;
+}
+
+body {
+  font-family: "Lora", serif;
+  background-color:var(--bg-color);
+  text-transform: capitalize;
+
+
+}
+
+h1 , h2 , h3 , h4 , h5 ,h6{
+  font-family: "Montserrat", serif;
+
+} 
+
+.container {
+  width: 80%;
+  margin-inline: auto;
+}
+
+/* للهواتف (أقل من 768px) */
+@media (max-width: 767px) {
+  .container {
+    width: 95%; 
+  }
+}
+
+
+/* للتابلت (من 768px إلى 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+
+
+.d-none{
+  display: none;
+}
+
+
+.btn {
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+}
